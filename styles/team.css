@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+.active:hover  {
+    color: red;
+}
+
+.burger {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; 
+    border-bottom: 1px solid grey;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.title {
+    font-size: 25px;
+}
+
+.menu-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    margin-right: 30px;
+    font-weight: 500;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-right: 10px;
+    gap: 40px;
+}
+
+/*Main*/
+
+/*Cards*/
+
+.team-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.team-card {
+    width: 80%;
+    margin-left: 30px;
+}
+
+.title-team {
+    font-size: 20px;
+    margin-left: 40px;
+    font-weight: 600;
+}
+
+.title-card {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 40px;
+}
+.subtitle-card {
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 40px;
+}
+
+.team-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/*footer*/
+
+.footer{
+    width: 100%;
+    height: 100px;  
+    background: #000;
+}
+
+.footer-title {
+    font-size: 18px;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+
+/*Media*/
+
+@media (max-width: 360px) {
+    .burger {
+        width: 27px;
+        height: 20px;           
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 5px;
+    }
+
+    .burger div {
+        background-color: #000;
+    }
+
+    .menu-items {
+        display: none;
+    }
+    .main-info{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-title {
+        font-size: 20px;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+
+    .team-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+    
+    .team-card {
+        width: 80%;
+        margin-left: 30px;
+    }
+    
+    .title-team {
+        font-size: 20px;
+        margin-left: 40px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .title-card {
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: 40px;
+        margin-bottom: 10px;
+
+    }
+    .subtitle-card {
+        font-size: 15px;
+        font-weight: 400;
+        margin-left: 40px;
+    }
+    
+    .team-img{
+        width: 200px;
+        height: 200px;
+        border-radius: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .footer{
+        height: 140px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 20px;
+    }
+    .main-info{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-title {
+        font-size: 30px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-left: 30px;
+        width: 300px;
+    }
+    .api-img {
+        width: 300px;
+        margin-bottom: 90px;
+    }
+
+    .section-info  {
+        min-height: 2000px;
+        width: 768px;
+    }
+    .section-title  {
+        font-size: 20px;
+        margin-left: 15px;
+        margin-bottom: 30px;
+    }
+
+    .section-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-adv {
+        padding-left: 30px;
+    }
+
+    .card{
+        width: 340px;                   
+    }
+
+    .card-button {
+        width: 186px;
+        height: 50px;
+        background-color: #FFF;
+        font-size: 18px;
+        margin-top: 30px;
+        margin-left: 281px;
+    }
+
+    .footer{
+        height: 140px;
+    }
+}
